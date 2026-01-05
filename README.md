@@ -1,12 +1,12 @@
 # FCC-Python-Certification-CERT-PROJECT-Budget-App
 
-Build a Budget App
+## Build a Budget App
 
 In this lab, you will build a simple budget app that tracks spending in different categories and can show the relative spending percentage on a graph.
 
 Objective: Fulfill the user stories below and get all the tests to pass to complete the lab.
 
-User Stories:
+## User Stories:
 
     You should have a Category class that accepts a name as the argument.
 
@@ -24,7 +24,7 @@ User Stories:
         List each ledger entry with up to 23 characters of its description left-aligned and the amount right-aligned (two decimal places, max 7 characters).
         Show a final line Total: [balance], where [balance]` should be replaced by the category total.
 
-    Here is an example usage:
+Here is an example usage:
 
     food = Category('Food')
     food.deposit(1000, 'deposit')
@@ -34,7 +34,7 @@ User Stories:
     food.transfer(50, clothing)
     print(food)
 
-    And here is an example of the output:
+And here is an example of the output:
 
     *************Food*************
     initial deposit        1000.00
@@ -43,17 +43,17 @@ User Stories:
     Transfer to Clothing    -50.00
     Total: 923.96
 
-    You should have a function outside the Category class named create_spend_chart(categories) that returns a bar-chart string. To build the chart:
-        Start with the title Percentage spent by category.
-        Calculate percentages from withdrawals only and not from deposits. The percentage should be the percentage of the amount spent for each category to the total spent for all categories (rounded down to the nearest 10).
-        Label the y-axis from 100 down to 0 in steps of 10.
-        Use o characters for the bars.
-        Include a horizontal line two spaces past the last bar.
-        Write category names vertically below the bar.
+You should have a function outside the Category class named create_spend_chart(categories) that returns a bar-chart string. To build the chart:
+- Start with the title Percentage spent by category.
+- Calculate percentages from withdrawals only and not from deposits. The percentage should be the percentage of the amount spent for each category to the total spent for all categories (rounded down to the nearest 10).
+- Label the y-axis from 100 down to 0 in steps of 10.
+- Use o characters for the bars.
+- Include a horizontal line two spaces past the last bar.
+- Write category names vertically below the bar.
 
-    This function will be tested with up to four categories.
+This function will be tested with up to four categories.
 
-    Make sure to match the spacing of the example output exactly:
+Make sure to match the spacing of the example output exactly:
 
     Percentage spent by category
     100|          
